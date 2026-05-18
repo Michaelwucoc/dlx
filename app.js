@@ -65,7 +65,7 @@ async function incrementGlobalCount() {
 function playRandomSound() {
   incrementGlobalCount();
 
-  const isSound3 = Math.random() < 0.001;
+  const isSound3 = Math.random() < 0.05;
   const src = isSound3 ? "sounds/sound3.mp3" : pickRandomSound();
   const audio = new Audio(src);
   if (isSound3) {
